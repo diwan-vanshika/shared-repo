@@ -1,4 +1,4 @@
-#Addition of matrix in java
+//Addition of matrix in java
 import java.util.Scanner;
 
 public class matrixaddition {
