@@ -65,3 +65,93 @@ public class matrixaddition {
 	}
 
 }
+
+
+
+
+
+
+// Subtraction of matrix in java
+// Code done by Yatharth Singh
+import java.util.Scanner;
+
+public class Subtraction_of_matrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+	System.out.print("Enter Number of rows for matrix 1 ");
+	int nr1 = sc.nextInt();
+	System.out.print("Enter Number of columns for matrix 1 ");
+	int nc1 = sc.nextInt();
+	
+	int	a[][]=new int[nr1][nc1];
+	
+	System.out.println("Enter matrix 1");
+	for(int i=0;i<nr1;i++)
+	{
+		for(int j=0;j<nc1;j++)
+		{
+			a[i][j]=sc.nextInt();
+		}
+	}
+	System.out.print("Enter Number of rows for matrix 2 ");
+	int nr2 = sc.nextInt();
+	System.out.print("Enter Number of columns for matrix 2 ");
+	int nc2 = sc.nextInt();
+	
+	int	b[][]=new int[nr2][nc2];
+	System.out.println("Enter matrix 2");
+	for(int i=0;i<nr2;i++)
+	{
+		for(int j=0;j<nc2;j++)
+		{
+			b[i][j]=sc.nextInt();
+		}
+	}
+	System.out.println("Matrix 1 is");
+	for(int i=0;i<nr1;i++)
+	{
+		for(int j=0;j<nc1;j++)
+		{	
+			
+			System.out.print(a[i][j] + " ");
+		}
+		
+		System.out.println();
+	}
+
+	System.out.println("Matrix 2 is");
+	for(int i=0;i<nr2;i++)
+	{
+		for(int j=0;j<nc2;j++)
+		{
+			System.out.print(b[i][j] + " ");
+		}
+		
+		System.out.println();
+	}
+	
+	if ((nr1==nr2)&&(nc1==nc2))
+			{
+	int c[][]=new int[nr1][nc1];
+	System.out.println("Sum of matrix is");
+	for(int i=0;i<nr1;i++)
+	{
+		for(int j=0;j<nc1;j++)
+		{
+			c[i][j]=a[i][j]+b[i][j];
+			
+			System.out.print(c[i][j] + " ");
+		}
+		
+		System.out.println();
+	}}
+	else {
+		System.out.print("Subtraction is not possible");
+	}
+	sc.close();
+	}
+
+}
+
