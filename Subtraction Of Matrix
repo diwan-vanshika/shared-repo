@@ -1,4 +1,5 @@
-// Addition of matrix in java
+// Subtraction of matrix in java
+// Code done by Yatharth Singh
 import java.util.Scanner;
 
 public class Subtraction_of_matrix {
